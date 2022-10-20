@@ -3,12 +3,8 @@ function isPalindrome(word) {
   for (let i = 0; i < word.length; i++) {
     const currentCharacter = word[i]
     reverseWord = currentCharacter + reverseWord
-    console.log(currentCharacter)
   }
-  console.log(reverseWord)
-  // Make another string (that will hold the reverse of `word`)
-  // Loop through word, adding characters to the beginning of my new variable
-  // Compare my new variable to the original
+  return reverseWord === word
 }
 
 console.log('Expect true')
