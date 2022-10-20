@@ -6,17 +6,14 @@ function isPalindrome(word) {
       return false
     }
   }
+  return true
 }
 
-/*
 console.log('Expect true')
 console.log(isPalindrome('noon'))
-*/
 
 console.log('Expect false')
 console.log(isPalindrome('horse'))
 
-/*
 console.log('Expect true')
 console.log(isPalindrome('racecar'))
-*/
