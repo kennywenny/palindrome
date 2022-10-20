@@ -4,6 +4,15 @@ function isPalindrome(word) {
       : isPalindrome(word.substring(1, word.length - 1))
 }
 
+/*
+return <condition> ? <value_when_true> : <value_when_false>
+means
+if <condition> {
+  return <value_when_true>
+} else {
+  return <value_when_false>
+}
+
 console.log('Expect true')
 console.log(isPalindrome('a'))
 
