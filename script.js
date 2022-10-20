@@ -1,6 +1,8 @@
 function isPalindrome(word) {
   const characters = word.split('')
-  console.log(characters)
+  const reversedCharacters = characters.reverse()
+  const reversedWord = reversedCharacters.join('')
+  console.log(reversedWord)
 }
 
 console.log('Expect true')
