@@ -1,15 +1,22 @@
 function isPalindrome(word) {
   for (let i = 0; i < word.length; i++) {
     const wordCharacter = word[i]
-    console.log(wordCharacter)
+    const wordCharacterFromEnd = word[word.length - i - 1]
+    if (wordCharacter !== wordCharacterFromEnd) {
+      return false
+    }
   }
 }
 
+/*
 console.log('Expect true')
 console.log(isPalindrome('noon'))
+*/
 
 console.log('Expect false')
 console.log(isPalindrome('horse'))
 
+/*
 console.log('Expect true')
 console.log(isPalindrome('racecar'))
+*/
