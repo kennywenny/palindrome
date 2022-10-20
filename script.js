@@ -1,7 +1,15 @@
 function isPalindrome(word) {
-  const reversedWord = word.split('').reverse().join('')
-  return word === reversedWord
+  if (word === '' || word.length === 1) {
+    return true
+  }
+  if (word[0] !== word[word.length - 1]) {
+    return false
+  }
+  return isPalindrome(word.substring(1, word.length - 1))
 }
+
+console.log('Expect true')
+console.log(isPalindrome('a'))
 
 console.log('Expect true')
 console.log(isPalindrome('noon'))
