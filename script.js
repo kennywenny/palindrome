@@ -1,10 +1,8 @@
 function isPalindrome(word) {
-  let reverseWord = ''
   for (let i = 0; i < word.length; i++) {
-    const currentCharacter = word[i]
-    reverseWord = currentCharacter + reverseWord
+    const wordCharacter = word[i]
+    console.log(wordCharacter)
   }
-  return reverseWord === word
 }
 
 console.log('Expect true')
@@ -15,15 +13,3 @@ console.log(isPalindrome('horse'))
 
 console.log('Expect true')
 console.log(isPalindrome('racecar'))
-
-/*
-Ex:
-Input: "noon"
-Output: true
-
-Input: "horse"
-Output: false
-
-Input: "racecar"
-Output: true
-*/
