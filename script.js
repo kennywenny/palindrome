@@ -1,12 +1,6 @@
 function isPalindrome(word) {
-  for (let i = 0; i < word.length; i++) {
-    const wordCharacter = word[i]
-    const wordCharacterFromEnd = word[word.length - i - 1]
-    if (wordCharacter !== wordCharacterFromEnd) {
-      return false
-    }
-  }
-  return true
+  const characters = word.split('')
+  console.log(characters)
 }
 
 console.log('Expect true')
